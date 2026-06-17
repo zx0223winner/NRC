@@ -27,7 +27,7 @@ MODEL_PATH: str = 'path_to_pt_file'
 # Execution of the script
 if __name__ == '__main__':
     model = WCNN(regression=True, encoding_size=4)
-    model.load_state_dict(load(model_path))
+    model.load_state_dict(load(MODEL_PATH))
 
     seq = input('\nEnter the sequence: ').upper()
     print(len(seq))
